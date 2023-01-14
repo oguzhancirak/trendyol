@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Coursal from './components/Coursal';
+import Header from './components/Header';
+import Menu from './components/Menu';
+import CartSection from './components/CartSection';
+import OneCikanlar from './components/OneCikanlar';
+import Footer from './components/Footer';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+      <Header></Header>
+      <Menu></Menu>
+      <hr className='mt-2'/>
+      <Coursal></Coursal>
+      <CartSection></CartSection>
+      <OneCikanlar></OneCikanlar>
+      <CartSection></CartSection>
+      <OneCikanlar></OneCikanlar>
+      <OneCikanlar ></OneCikanlar>
+      <Footer></Footer>
+     
     </div>
   );
 }
